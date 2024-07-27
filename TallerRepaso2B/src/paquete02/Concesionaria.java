@@ -2,7 +2,7 @@ package paquete02;
 
 import java.util.ArrayList;
 
-public class Concensionaria {
+public class Concesionaria {
     private String nombreConcesionaria;
     private ArrayList<Vehiculo> vehiculos;
     private double ventasTotales;
@@ -71,9 +71,12 @@ public class Concensionaria {
             Vehiculo v = vehiculos.get(i);
             cadena += v + "\n";
         }
-        cadena = String.format("%sVentas totales: %.2f\n"
-                + "Vehiculo mas caro: \n%s\n"
-                + "Vehiculo mas barato: \n%s\n",
+        
+        cadena = String.format("%s-----------------------------o\n"
+                + "Ventas totales: $%.2f\n----------------------o\n"
+                + "VEHICULO MAS CARO: \n%s\n--------------------------o\n"
+                + "VEHICULO MAS BARATO: \n%s\n",
+                cadena,
                 obtenerVentasTotales(),
                 obtenerVehiculoMasCaro(),
                 obtenerVehiculoMasBarato());

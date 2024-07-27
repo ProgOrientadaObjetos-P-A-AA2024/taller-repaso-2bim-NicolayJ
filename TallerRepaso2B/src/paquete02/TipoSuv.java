@@ -7,7 +7,7 @@ public class TipoSuv extends Vehiculo{
     private double seguroPersona;
 
     public TipoSuv(double porcSeg, double segPers, Comprador prop, String mar,
-            double precB, double preF) {
+            double precB) {
         super(prop, mar, precB);
         porcentajeSeguroPers = porcSeg;
         seguroPersona = segPers;
@@ -36,11 +36,11 @@ public class TipoSuv extends Vehiculo{
     
     @Override
     public String toString(){
-        String cadena = String.format("TIPO SUV\n"
-                + "%s\n"
-                + "Porcentaje adicional del seguro: %.2f%%%\n"
-                + "Seguro personas: %.2f\n"
-                + "Precio final: %.2f\n", 
+        String cadena = String.format("------>TIPO SUV\n"
+                + "%s"
+                + "Porcentaje adicional del seguro: %.2f%%\n"
+                + "Seguro personas: $%.2f\n"
+                + "Precio final: $%.2f\n", 
                 super.toString(),
                 obtenerPorcentajeSeguroPers(),
                 obtenerSeguroPerson(),

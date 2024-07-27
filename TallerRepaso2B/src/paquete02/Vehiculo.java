@@ -49,7 +49,7 @@ public abstract class Vehiculo {
     public String toString(){
         String cadena = String.format("%s\n"
                 + "Marca: %s\n"
-                + "Precio base: %.2f\n",
+                + "Precio base: $%.2f\n",
                 propietario.toString(),
                 obtenerMarca(),
                 obtenerPrecioBase());
