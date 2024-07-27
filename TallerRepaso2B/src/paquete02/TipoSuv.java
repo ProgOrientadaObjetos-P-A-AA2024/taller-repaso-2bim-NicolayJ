@@ -4,26 +4,26 @@ import paquete03.Comprador;
 
 public class TipoSuv extends Vehiculo{
     private double porcentajeSeguroPers;
-    private double seguroPerson;
+    private double seguroPersona;
 
     public TipoSuv(double porcSeg, double segPers, Comprador prop, String mar,
             double precB, double preF) {
-        super(prop, mar, precB, preF);
+        super(prop, mar, precB);
         porcentajeSeguroPers = porcSeg;
-        seguroPerson = segPers;
+        seguroPersona = segPers;
     }
 
     public void establecerPorcentajeSeguroPers(double porcSeg) {
         porcentajeSeguroPers = porcSeg;
     }
 
-    public void establecerSeguroPerson() {
-        seguroPerson = precioBase * (porcentajeSeguroPers / 100);
+    public void establecerSeguroPersona() {
+        seguroPersona = precioBase * (porcentajeSeguroPers / 100);
     }
     
     @Override
     public void calcularPrecioFinal() {
-        precioFinal = precioBase + seguroPerson;   
+        precioFinal = precioBase + seguroPersona;   
     }
 
     public double obtenerPorcentajeSeguroPers() {
@@ -31,7 +31,7 @@ public class TipoSuv extends Vehiculo{
     }
 
     public double obtenerSeguroPerson() {
-        return seguroPerson;
+        return seguroPersona;
     }
     
     @Override

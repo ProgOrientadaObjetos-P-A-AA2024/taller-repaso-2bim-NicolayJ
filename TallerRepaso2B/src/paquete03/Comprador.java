@@ -9,12 +9,12 @@ public class Comprador {
         cedula = c;
     }
 
-    public void establecerNombre(String nombre) {
-        this.nombre = nombre;
+    public void establecerNombre(String nom) {
+        nombre = nom;
     }
 
-    public void establecerCedula(String cedula) {
-        this.cedula = cedula;
+    public void establecerCedula(String ced) {
+        cedula = ced;
     }
 
     public String obtenerNombre() {

@@ -9,7 +9,7 @@ public class TipoSedan extends Vehiculo {
 
     public TipoSedan(double porcDesc, double segMec, Comprador prop, String mar,
             double precB, double preF) {
-        super(prop, mar, precB, preF);
+        super(prop, mar, precB);
         porcentajeDescuento = porcDesc;
         seguroMecanico = segMec;
     }
@@ -24,7 +24,7 @@ public class TipoSedan extends Vehiculo {
 
     @Override
     public void calcularPrecioFinal() {
-        valorDescuento = precioBase * (porcentajeDescuento / 100);
+        seguroMecanico = precioBase * 0.01;
         precioFinal = precioBase - valorDescuento + seguroMecanico;
     }
 

@@ -9,11 +9,10 @@ public abstract class Vehiculo {
     protected double precioBase;
     protected double precioFinal;
 
-    public Vehiculo(Comprador prop, String mar, double precB, double preF) {
+    public Vehiculo(Comprador prop, String mar, double precB) {
         propietario = prop;
         marca = mar;
         precioBase = precB;
-        precioFinal = preF;
     }
 
     public void establecerPropietario(Comprador prop) {

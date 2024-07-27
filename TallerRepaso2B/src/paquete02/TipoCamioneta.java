@@ -8,8 +8,8 @@ public class TipoCamioneta extends Vehiculo {
     private double seguroMantenimiento;
 
     public TipoCamioneta(double porcAdicImp, Comprador prop, String mar,
-            double precB, double preF) {
-        super(prop, mar, precB, preF);
+            double precB) {
+        super(prop, mar, precB);
         porcentajeAdicionalImportacion = porcAdicImp;
     }
 
